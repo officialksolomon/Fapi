@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetcher</title>
+</head>
+<body class="bg-danger">
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-danger">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Fapi</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#fetcher-nav"
+                    aria-controls="fetcher-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="fetcher-nav">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="#">About</a>
+                        <a class="nav-link active" aria-current="page" href="#">Contact</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </nav>
+<!-- contents -->
+<div class="container-fluid content h-100 bt">
+<div class="row h-100 b">
+
+    <div class="col h-100">
+        <div class="container">
+            <div class="form-group m-3">
+              <label for="" class="text-white m-2 fw-bolder">url</label> 
+              <div class="d-flex flex-column flex-sm-row">
+                  <input  type="text"  class="url form-control bg-white" name="url" id="url"  placeholder="API url..." > 
+                  <button class="fetch-button btn btn-danger rounded-0 shadow-lg p-4 pb-1 pt-1 mt-3 mt-sm-0">Fetch</button>
+              </div>
+            <div class="display-wrapper container  bg-white h-75 mt-5 overflow-scroll p-3 mb-5 dp-none">
+                <!-- save-alert -->
+              <div class="save-alert border bg-light shadow p-3  dp-none">
+                 <div class="w-100 d-flex justify-content-end align-items-end">
+                    <button type="button" class="close-btn btn btn-outline-danger"><i class="fas fa-window-close    "></i> Close</button>
+                 </div>
+                  <div class="form-group w-100">
+                    <label for="">Save as:</label>
+                    <input type="text" name="" id="" class="key-input form-control border-danger" placeholder="Enter a name" aria-describedby="helpId">
+                    <small id="helpId" class="text-muted text-white">Examples: posts, user...</small>
+                  </div>
+                 <button class="save-btn btn btn-outline-danger btn-block ">Save</button>
+              </div>
+                <div class="d-flex justify-content-end align-items-end p-2">
+                    <button type="button" class="clear-btn btn  btn-outline-danger m-2">Clear</button>
+                    <button type="button" class="save-trigger btn btn-danger m-2">Save</button>
+                </div>
+                <div class="container result-display">
+
+                </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+<script src="https://kit.fontawesome.com/2fd9d1de4d.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    <script src="api.js" type="module" defer></script>
+    <script src="apiUserInterface.js" type="module" defer></script>
+</body>
+</html>
